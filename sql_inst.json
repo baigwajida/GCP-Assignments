@@ -1,0 +1,51 @@
+{
+  "backendType": "SECOND_GEN",
+  "connectionName": "pe-training:us-central1:wajida-pe-sql-instance",
+  "databaseVersion": "MYSQL_5_6",
+  "etag": "\"owIwbPCMl___5FpvLn6vsQ5VnhQ/MQ\"",
+  "gceZone": "us-central1-a",
+  "instanceType": "CLOUD_SQL_INSTANCE",
+  "ipAddresses": [
+    {
+      "ipAddress": "35.226.156.14",
+      "type": "PRIMARY"
+    }
+  ],
+  "kind": "sql#instance",
+  "name": "wajida-pe-sql-instance",
+  "project": "pe-training",
+  "region": "us-central1",
+  "selfLink": "https://www.googleapis.com/sql/v1beta4/projects/pe-training/instances/wajida-pe-sql-instance",
+  "serverCaCert": {
+    "cert": "-----BEGIN CERTIFICATE-----\nMIIDITCCAgmgAwIBAgIBADANBgkqhkiG9w0BAQsFADBIMSMwIQYDVQQDExpHb29n\nbGUgQ2xvdWQgU1FMIFNlcnZlciBDQTEUMBIGA1UEChMLR29vZ2xlLCBJbmMxCzAJ\nBgNVBAYTAlVTMB4XDTE4MDgwMTA3Mjk0MFoXDTI4MDcyOTA3MzA0MFowSDEjMCEG\nA1UEAxMaR29vZ2xlIENsb3VkIFNRTCBTZXJ2ZXIgQ0ExFDASBgNVBAoTC0dvb2ds\nZSwgSW5jMQswCQYDVQQGEwJVUzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC\nggEBAJBCgiK3G8pk15wYPY2M/cpQjQXXNUdlGvVfqYXFe0FtZrcFjtnS+mweY6a+\n3TIa1YjkTCVU3df5rkmG8BW/L9s5gbRMCx/YGGdMR5wbaxQzf2zBX3I+rDmNVrOU\n3rlC2yrBWrZx2sYaGjhXN9ZQuIbylCeHyflZItD5RjcrzlAz+9pShbHaU5uAVmvf\niO299/hicEd5g5BVQneHcm1fm2G9KtVa71rw8zaxF5/QihU3NOGAhq2jS7ZP2d2c\nN+uY6oYDeelm31Dstw+fURwtudDvxt+MmWqdxIQdY9cuZzsP5eeQ/Zjw0m4BpCXb\nv228tPXlSHuG/TmFau3I4JW316cCAwEAAaMWMBQwEgYDVR0TAQH/BAgwBgEB/wIB\nADANBgkqhkiG9w0BAQsFAAOCAQEALWuTONS5495AQQIZJOiuuXM2k0INzAkFnM2/\nfwz5D/U4Hi3MXLEUr1n6TsMeNJIV99hXpN0ClShhagsgFwJXvsoASO7papm+vBEe\n1UF4emrpJxuuvLfhRFvovvNFNnlqfcWjXZ2GDvozIuHPRDnaz2aNmYy5s6BKaUi2\nV7Q0vhaJdws/PahAJAnzQg8k7AUP++zax4sTrxmgDPRMa4qI/WqB6FeshYyrjGV/\nWvV26+7NqHcROdL4W+pkKm/s8Cgx/peqUsuHF91J28tf1WoBE4T5raoz5F03ktyT\nCHFwNw2Kw6Xye6ri7H89SNQ405I56Xio0G5mtUMXeBQJnRpXkw==\n-----END CERTIFICATE-----",
+    "certSerialNumber": "0",
+    "commonName": "C=US,O=Google\\, Inc,CN=Google Cloud SQL Server CA",
+    "createTime": "2018-08-01T07:29:40.981000+00:00",
+    "expirationTime": "2028-07-29T07:30:40.981000+00:00",
+    "instance": "wajida-pe-sql-instance",
+    "kind": "sql#sslCert",
+    "sha1Fingerprint": "a6d1434125e135e4c40308cf331d4cfa2bee2ca9"
+  },
+  "serviceAccountEmailAddress": "qhtsvvb5ufecvisbbeflnuqo3m@speckle-umbrella-18.iam.gserviceaccount.com",
+  "settings": {
+    "activationPolicy": "ALWAYS",
+    "backupConfiguration": {
+      "enabled": false,
+      "kind": "sql#backupConfiguration",
+      "startTime": "17:00"
+    },
+    "dataDiskSizeGb": "10",
+    "dataDiskType": "PD_SSD",
+    "ipConfiguration": {
+      "ipv4Enabled": true
+    },
+    "kind": "sql#settings",
+    "pricingPlan": "PER_USE",
+    "replicationType": "SYNCHRONOUS",
+    "settingsVersion": "1",
+    "storageAutoResize": true,
+    "storageAutoResizeLimit": "0",
+    "tier": "db-f1-micro"
+  },
+  "state": "RUNNABLE"
+}
