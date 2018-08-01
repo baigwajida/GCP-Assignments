@@ -1,23 +1,23 @@
 #!/bin/bash
 
 echo "Creating SQL instance"
-gcloud sql instances create wajida-sql-instance --tier=db-f1-micro --region=us-central1 --authorized-networks=59.152.52.0/22
+gcloud sql instances create wajida-pe-sql-instance --tier=db-f1-micro --region=us-central1 
 
 echo "Creating Database"
-gcloud sql databases create employee_mgmt --instance=wajida-sql-intance
+gcloud sql databases create employee_mgmt --instance=wajida-pe-sql-intance
 
 echo "Creating user"
-gcloud sql users create application_user --instance=wajida-sql-instance
+gcloud sql users create application_user --instance=wajida-pe-sql-instance
 
 echo "getting IP"
 
-gcloud sql instances describe wajida-sql-instance --format=json > sql_inst.json
+gcloud sql instances describe wajida-pe-sql-instance --format=json > sql_inst.json
 ip=$(python instance_sql.py)
 
 
-gcloud sql users list --instance=wajida-sql-instance
+gcloud sql users list --instance=wajida-pe-sql-instance
 
-gcloud sql connect wajida-sql-instance --user=root << EOF
+gcloud sql connect wajida-pe-sql-instance --user=root << EOF
 
 
 USE employee_mgmt;
