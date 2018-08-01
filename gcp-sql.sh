@@ -44,6 +44,7 @@ REVOKE SELECT, INSERT on employee_mgmt.employee_details from application_user;
 SHOW GRANTS application_user;
 
 RENAME TABLE employee_details to employee_info;
+SELECT * FROM employee_info;
 DROP TABLE employee_info;
 
 EOF
