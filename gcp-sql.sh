@@ -32,9 +32,9 @@ INSERT INTO employee_details VALUES ('Utsav', 'PE');
 INSERT INTO employee_details VALUES ('Chaitanya', 'DE');
 
 SELECT * FROM employee_details;
-UPDATE employee_details SET role='PE' WHERE name=='Chaitanya';
+UPDATE employee_details SET role='PE' WHERE name='Chaitanya';
 SELECT * FROM employee_details;
-DELETE FROM employee_details WHERE name=='Utsav';
+DELETE FROM employee_details WHERE name='Utsav';
 SELECT * FROM employee_details;
 
 GRANT SELECT, INSERT on employee_mgmt.employee_details to application_user;
